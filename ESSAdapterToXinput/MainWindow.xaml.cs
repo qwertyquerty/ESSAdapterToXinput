@@ -143,6 +143,8 @@ namespace ESSAdapterToXinput
                     controller.SetButtonState(Xbox360Button.B, state.Buttons["b"]);
                     controller.SetButtonState(Xbox360Button.X, state.Buttons["x"]);
                     controller.SetButtonState(Xbox360Button.Y, state.Buttons["y"]);
+                    controller.SetButtonState(Xbox360Button.LeftShoulder, state.Buttons["l"]);
+                    controller.SetButtonState(Xbox360Button.RightShoulder, state.Buttons["r"]);
 
                     // Axis
                     controller.SetAxisValue(Xbox360Axis.LeftThumbX, (short)(state.Analogs["lstick_x"] * short.MaxValue));
@@ -159,7 +161,7 @@ namespace ESSAdapterToXinput
                     // Trigger
                     controller.SetSliderValue(Xbox360Slider.LeftTrigger, (byte)(state.Analogs["trig_l"] * 255));
                     controller.SetSliderValue(Xbox360Slider.RightTrigger, (byte)(state.Analogs["trig_r"] * 255));
-                    controller.SetButtonState(Xbox360Button.RightShoulder, state.Buttons["z"]);
+                    controller.SetButtonState(Xbox360Button.Back, state.Buttons["z"]);
 
                     // Start
                     controller.SetButtonState(Xbox360Button.Start, state.Buttons["start"]);
